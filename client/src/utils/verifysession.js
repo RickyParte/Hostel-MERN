@@ -1,5 +1,5 @@
 const verifysession = async () => {
-    let response = await fetch("http://3.111.139.9:8000/api/auth/verifysession", {
+    let response = await fetch("http://3.111.139.9:5000/api/auth/verifysession", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -1,4 +1,4 @@
-@tailwind http://3.111.139.9:8000;
+@tailwind http://3.111.139.9:5000;
 @tailwind components;
 @tailwind utilities;
 
@@ -42,7 +42,7 @@ input:-webkit-autofill:active {
     transition: background-color 5000000s ease-in-out 0s;
 }
 
-@layer http://3.111.139.9:8000 {
+@layer http://3.111.139.9:5000 {
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;

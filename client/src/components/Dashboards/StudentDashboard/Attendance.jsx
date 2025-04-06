@@ -5,7 +5,7 @@ function Attendance() {
   const [totalDays, setTotalDays] = useState(0);
   const getAttendance = async () => {
       let student = JSON.parse(localStorage.getItem("student"));
-      const res = await fetch("http://3.111.139.9:8000/api/attendance/get", {
+      const res = await fetch("http://3.111.139.9:5000/api/attendance/get", {
         method: "POST",
         headers:{
           "Content-Type": "application/json",

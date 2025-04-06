@@ -19,7 +19,7 @@ function Complaints() {
       type: type,
     };
 
-    const res = await fetch("http://3.111.139.9:8000/api/complaint/register", {
+    const res = await fetch("http://3.111.139.9:5000/api/complaint/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -102,7 +102,7 @@ function Complaints() {
     const student = JSON.parse(localStorage.getItem("student"));
     const cmpln = { student: student._id };
     const fetchComplaints = async () => {
-      const res = await fetch("http://3.111.139.9:8000/api/complaint/student", {
+      const res = await fetch("http://3.111.139.9:5000/api/complaint/student", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
