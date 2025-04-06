@@ -9,7 +9,7 @@ export default function RequestAcc() {
       cms_id: inputCms,
     };
 
-    fetch("http://localhost:3000/api/request/register", {
+    fetch("3.111.139.9:8000/api/request/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
