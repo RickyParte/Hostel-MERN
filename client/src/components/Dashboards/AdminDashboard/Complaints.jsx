@@ -7,7 +7,7 @@ function Complaints() {
   const getComplaints = async () => {
     const hostel = JSON.parse(localStorage.getItem("hostel"))._id;
     const response = await fetch(
-      `3.111.139.9:8000/api/complaint/hostel`,
+      `http://3.111.139.9:8000/api/complaint/hostel`,
       {
         method: "POST",
         headers: {
@@ -57,7 +57,7 @@ function Complaints() {
 
   const dismissComplaint = async (id) => {
     const response = await fetch(
-      "3.111.139.9:8000/api/complaint/resolve/",
+      "http://3.111.139.9:8000/api/complaint/resolve/",
       {
         method: "POST",
         headers: {

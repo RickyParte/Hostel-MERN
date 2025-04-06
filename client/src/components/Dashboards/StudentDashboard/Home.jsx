@@ -18,7 +18,7 @@ const List = () => {
   ]);
   useEffect(() => {
     let student = JSON.parse(localStorage.getItem("student"));
-    fetch("3.111.139.9:8000/api/invoice/student", {
+    fetch("http://3.111.139.9:8000/api/invoice/student", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -121,7 +121,7 @@ function Home() {
 
   const getAttendance = async () => {
     let student = JSON.parse(localStorage.getItem("student"));
-    const res = await fetch("3.111.139.9:8000/api/attendance/get", {
+    const res = await fetch("http://3.111.139.9:8000/api/attendance/get", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

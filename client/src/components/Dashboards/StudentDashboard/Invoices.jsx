@@ -8,7 +8,7 @@ function Invoices() {
 
   useEffect(() => {
     let student = JSON.parse(localStorage.getItem("student"));
-    fetch("3.111.139.9:8000/api/invoice/student", {
+    fetch("http://3.111.139.9:8000/api/invoice/student", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

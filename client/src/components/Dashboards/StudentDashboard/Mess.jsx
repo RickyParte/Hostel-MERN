@@ -15,7 +15,7 @@ function Mess() {
       return_date: returnDate,
     };
 
-    let response = await fetch("3.111.139.9:8000/api/Messoff/request", {
+    let response = await fetch("http://3.111.139.9:8000/api/Messoff/request", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -93,7 +93,7 @@ function Mess() {
     let student = JSON.parse(localStorage.getItem("student"));
     setLoading(true);
     if (student) {
-      fetch("3.111.139.9:8000/api/Messoff/count", {
+      fetch("http://3.111.139.9:8000/api/Messoff/count", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

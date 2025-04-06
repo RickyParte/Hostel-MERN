@@ -21,7 +21,7 @@ export default function SignIn() {
       password: pass,
     };
 
-    let response = await fetch("3.111.139.9:8000/api/auth/login", {
+    let response = await fetch("http://3.111.139.9:8000/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +33,7 @@ export default function SignIn() {
 
     if (result.success) {
       localStorage.setItem("token", result.data.token);
-      let student = await fetch("3.111.139.9:8000/api/student/get-student", {
+      let student = await fetch("http://3.111.139.9:8000/api/student/get-student", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -7,7 +7,7 @@ function Suggestions() {
   const registerSuggestions = async (e) => {
     e.preventDefault();
     const student = JSON.parse(localStorage.getItem("student"));
-    const response = await fetch("3.111.139.9:8000/api/suggestion/register", {
+    const response = await fetch("http://3.111.139.9:8000/api/suggestion/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
