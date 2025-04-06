@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
-const mongoURI = 'mongodb+srv://sanketwalhekar83:9665998329@cluster0.sevwc.mongodb.net/invetory';
+const mongoURI = 'mongodb+srv://sanketwalhekar83:9665998329@cluster0.sevwc.mongodb.net/hostel';
 
 const connectDB = async () => {
     try {
